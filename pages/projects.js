@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Home() {
 
     return (
-        <div>
+        <div className='app-container'>
             <div className='card'>
                 <h3>3D Model Viewer</h3>
                 <Link href='https://github.com/Bibhor2000/3DView'>

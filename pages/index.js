@@ -1,21 +1,46 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+import Clock from 'react-live-clock';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+
+  const [dateState, setDateState] = useState(new Date());
+  useEffect(() => {
+         setInterval(() => setDateState(new Date()), 30000);
+  }, []);
+
   return (
     <div>
-      <div>
+      <div className='app-heading'>
         <h2>I'm Bibhor.</h2>
         <h1>I'm a web developer with experience in Front-End & Back-End frameworks</h1>
-        <h3>Most of my current experience is in React, Express, & Node</h3>
+        <h3>Most of my current experience is in React.JS, Express.JS, & Node.JS</h3>
       </div>
 
       <div>
+        <div className='app-calender'>
+          {' '}
+          {dateState.toLocaleDateString('en-GB', {
+           day: 'numeric',
+           month: 'short',
+           year: 'numeric',
+          })}
+        </div>
+        <div className='app-clock'>
+          <Clock
+          format={'h:mm:ssa'}
+          style={{fontSize: '1em'}}
+          ticking={true}/>
+        </div>
+      </div>
+
+      <div className='app-footer'>
         <h2>Visit me elsewhere</h2>
       </div>
 
-      <div>
+      <div className='app-links'>
         <Link href='https://github.com/Bibhor2000?tab=repositories'>
           <button>Github</button>
         </Link>
