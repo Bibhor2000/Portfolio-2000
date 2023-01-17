@@ -6,8 +6,8 @@ import Link from 'next/link';
 export default function Home() {
 
     return (
-        <div className='app-container'>
-            <div className='card'>
+        <div className={styles.appcontainer}>
+            <div className={styles.card}>
                 <h3>3D Model Viewer</h3>
                 <Link href='https://github.com/Bibhor2000/3DView'>
                     <button>Visit Repo</button>
@@ -16,7 +16,7 @@ export default function Home() {
                     <button>Visit Live Site</button>
                 </Link>
             </div>
-            <div className='card'>
+            <div className={styles.card}>
                 <h3>Pixel Avatar Icon Creator</h3>
                 <Link href='https://github.com/Bibhor2000/Project-2'>
                     <button>Visit Repo</button>
@@ -25,7 +25,7 @@ export default function Home() {
                     <button>Visit Live Site</button>
                 </Link>
             </div>
-            <div className='card'>
+            <div className={styles.card}>
                 <h3>Hangman Variation</h3>
                 <Link href='https://github.com/Bibhor2000/Project-1'>
                     <button>Visit Repo</button>

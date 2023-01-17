@@ -12,3 +12,8 @@
   overflow: hidden;
 }
 
+.appcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
