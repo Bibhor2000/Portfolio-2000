@@ -1,30 +1,29 @@
-import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-
+import styles from '../styles/Home.module.css';
 
 export default function Navbar() {
 
   return (
-    <nav className="app-navbar">
-      <ul>
-        <li>
+    <nav>
+      <div className={styles.appnavbar}>
+        <div>
           <Link href="/">
             <button className="btn-logo">Home</button>
           </Link>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Link href="/projects">
             <button className="btn-logo">Projects</button>
           </Link>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <Link href="/about">
             <button className="btn-logo">About</button>
           </Link>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   );
 }
