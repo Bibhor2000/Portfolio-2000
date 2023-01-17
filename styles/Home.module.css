@@ -17,3 +17,24 @@
   flex-direction: row;
 }
 
+.appheading {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.appfooter {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.applinks {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.appcalender {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+.appclock {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}

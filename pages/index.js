@@ -14,17 +14,17 @@ export default function Home() {
   return (
     <div className={styles.appcontainer}>
       <div>
-        <div className='app-heading'>
+        <div className={styles.appheading}>
           <h2>I'm Bibhor.</h2>
           <h1>I'm a web developer with experience in Front-End & Back-End frameworks</h1>
           <h3>Most of my current experience is in React.JS, Express.JS, & Node.JS</h3>
         </div>
 
-        <div className='app-footer'>
+        <div className={styles.appfooter}>
           <h2>Visit me elsewhere</h2>
         </div>
 
-        <div className='app-links'>
+        <div className={styles.applinks}>
           <Link href='https://github.com/Bibhor2000?tab=repositories'>
             <button>Github</button>
           </Link>
@@ -36,7 +36,7 @@ export default function Home() {
 
       <div>
         <div>
-          <div className='app-calender'>
+          <div className={styles.appcalender}>
             {' '}
             {dateState.toLocaleDateString('en-GB', {
             day: 'numeric',
@@ -44,7 +44,7 @@ export default function Home() {
             year: 'numeric',
             })}
           </div>
-          <div className='app-clock'>
+          <div className={styles.appclock}>
             <Clock
             format={'h:mm:ssa'}
             style={{fontSize: '1em'}}
