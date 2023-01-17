@@ -28,10 +28,10 @@ export default function Home() {
 
         <div className={styles.applinks}>
           <Link href='https://github.com/Bibhor2000?tab=repositories'>
-            <button>Github</button>
+            <button className={styles.appfooterbuttons}>Github</button>
           </Link>
           <Link href='https://www.linkedin.com/in/bibhor2000/'>
-            <button>LinkedIn</button>
+            <button className={styles.appfooterbuttons}>LinkedIn</button>
           </Link>
         </div>
       </div>

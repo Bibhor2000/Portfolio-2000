@@ -8,19 +8,19 @@ export default function Navbar() {
       <div className={styles.appnavbar}>
         <div>
           <Link href="/">
-            <button className="btn-logo">Home</button>
+            <button className={styles.appnavbuttons}>Home</button>
           </Link>
         </div>
 
         <div>
           <Link href="/projects">
-            <button className="btn-logo">Projects</button>
+            <button className={styles.appnavbuttons}>Projects</button>
           </Link>
         </div>
 
         <div>
           <Link href="/about">
-            <button className="btn-logo">About</button>
+            <button className={styles.appnavbuttons}>About</button>
           </Link>
         </div>
       </div>
