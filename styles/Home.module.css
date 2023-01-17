@@ -13,6 +13,11 @@
   overflow: hidden;
 }
 
+.cardbuttons {
+  background: transparent;
+  border-style: none;
+}
+
 .appcontainer {
   display: flex;
   flex-direction: row;
@@ -20,6 +25,7 @@
 
 .appheading {
   font-family: 'Times New Roman', Times, serif;
+  font-size: large;
   margin-left: 75px;
   margin-top: 75px;
 }
@@ -39,13 +45,14 @@
 .appcalender {
   font-family: 'Times New Roman', Times, serif;
   font-size: 75px;
-  margin-left: 425px;
+  margin-left: 400px;
+  margin-top: 55px;
 }
 
 .appclock {
   font-family: 'Times New Roman', Times, serif;
   font-size: 75px;
-  margin-left: 425px;
+  margin-left: 400px;
   margin-top: 100px;
 }
 
@@ -56,8 +63,12 @@
 
 .appnavbuttons {
   margin: 20px;
+  background: transparent;
+  border-style: none;
 }
 
 .appfooterbuttons {
   margin: 20px;
+  background: transparent;
+  border-style: none;
 }
