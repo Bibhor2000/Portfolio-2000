@@ -1,0 +1,6 @@
+Steps for Reading Weather from an Api:
+assign a varaible the parameters for the weatherstack api
+Use axios & the api key to connect to weatherstack
+
+
+Steps for Reading real-time computer performance: 
