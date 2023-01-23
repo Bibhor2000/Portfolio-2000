@@ -16,8 +16,9 @@ export default function Home() {
       <div>
         <div className={styles.appheading}>
           <h2>I'm Bibhor.</h2>
-          <h1>I'm a web developer with experience in <br></br>
-              Front-End & Back-End frameworks
+          <h1>I'm a Full-Stack developer<br></br>
+          with experience in Front-End<br></br>
+          & Back-End frameworks.
           </h1>
           <h3>Most of my current experience is in React.JS, Express.JS, & Node.JS</h3>
         </div>
