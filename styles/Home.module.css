@@ -56,6 +56,13 @@
   margin-top: 100px;
 }
 
+.appweather {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
 .appnavbar {
   display: flex;
   flex-direction: row;

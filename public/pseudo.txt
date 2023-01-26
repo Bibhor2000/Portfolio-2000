@@ -3,4 +3,9 @@ assign a varaible the parameters for the weatherstack api
 Use axios & the api key to connect to weatherstack
 
 
-Steps for Reading real-time computer performance: 
+Steps for Reading real-time performance:
+Declare function to report web-vitals in app js
+Setup the function with the necessary functionality to display all desired data
+Pass down the function as props to the projects page
+
+Steps for Displaying Data from the webvital function:

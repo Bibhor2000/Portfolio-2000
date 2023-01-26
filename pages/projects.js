@@ -1,9 +1,9 @@
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import {React, useState, useEffect} from 'react';
 
-
-export default function Home() {
+export default function Projects() {
 
     return (
         <div className={styles.appcontainer}>

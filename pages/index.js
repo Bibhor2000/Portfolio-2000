@@ -3,13 +3,28 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Clock from 'react-live-clock';
 import styles from '../styles/Home.module.css';
+import ReactWeather from 'react-open-weather';
 
 export default function Home() {
 
-  const [dateState, setDateState] = useState(new Date());
+  const [date, setDate] = useState(new Date());
   useEffect(() => {
-         setInterval(() => setDateState(new Date()), 30000);
+         setInterval(() => setDate(new Date()), 30000);
   }, []);
+
+  const [lat, setLat] = useState([]);
+  const [long, setLong] = useState([]);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      setLat(position.coords.latitude);
+      setLong(position.coords.longitude);
+    });
+
+    console.log("Latitude is:", lat)
+    console.log("Longitude is:", long)
+  }, [lat, long]);
 
   return (
     <div className={styles.appcontainer}>
@@ -41,7 +56,7 @@ export default function Home() {
         <div>
           <div className={styles.appcalender}>
             {' '}
-            {dateState.toLocaleDateString('en-GB', {
+            {date.toLocaleDateString('en-GB', {
             day: 'numeric',
             month: 'short',
             year: 'numeric',
@@ -52,6 +67,10 @@ export default function Home() {
             format={'h:mm:ssa'}
             style={{fontSize: '1em'}}
             ticking={true}/>
+          </div>
+          <div className={styles.appweather}>
+            <div>Current Latitude: {lat}</div>
+            <div>Current Longitude: {long}</div>
           </div>
         </div>
       </div>
