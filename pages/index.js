@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import Clock from 'react-live-clock';
 import styles from '../styles/Home.module.css';
+import animateStyles from '../styles/animation.module.css';
 import ReactWeather from 'react-open-weather';
 
 export default function Home() {
@@ -17,14 +18,22 @@ export default function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      setLat(position.coords.latitude);
-      setLong(position.coords.longitude);
-    });
-
-    console.log("Latitude is:", lat)
-    console.log("Longitude is:", long)
-  }, [lat, long]);
+    const fetchData = async () => {
+      navigator.geolocation.getCurrentPosition(function(position) {
+        setLat(position.coords.latitude);
+        setLong(position.coords.longitude);
+      });
+      // console.log(process.env.NEXT_PUBLIC_API_URL)
+      console.log(process.env.NEXT_PUBLIC_API_KEY)
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.NEXT_PUBLIC_API_KEY}`)
+      .then(res => res.json())
+      .then(result => {
+        setData(result)
+        console.log(result);
+      });
+    }
+    fetchData();
+  }, [lat,long])
 
   return (
     <div className={styles.appcontainer}>
@@ -71,8 +80,24 @@ export default function Home() {
           <div className={styles.appweather}>
             <div>Current Latitude: {lat}</div>
             <div>Current Longitude: {long}</div>
+            <div></div>
           </div>
         </div>
+      </div>
+
+      <div class=''>
+        <ul >
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     </div>
   )

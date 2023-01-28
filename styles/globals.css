@@ -21,6 +21,7 @@ a {
   }
   body {
     background: dimgray;
+    background: -webkit-linear-gradient(to left, lightgray, silver);
     color: white;
   }
 }
