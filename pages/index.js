@@ -15,7 +15,7 @@ export default function Home() {
 
   const [lat, setLat] = useState([]);
   const [long, setLong] = useState([]);
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,6 +32,10 @@ export default function Home() {
     }
     fetchData();
   }, [lat,long])
+
+  // const dw = data.weather.map((ele, index) =>{
+  //   <div key={index} id={ele.id}>{ele}</div>
+  // });
 
   // console.log(data)
   // console.log(data.weather)
@@ -78,11 +82,13 @@ export default function Home() {
             style={{fontSize: '1em'}}
             ticking={true}/>
           </div>
-          <div className={styles.appweather}>
+          {data?.weather&&<div className={styles.appweather}>
             <div>Current Latitude: {lat}</div>
             <div>Current Longitude: {long}</div>
-            <div></div>
+            <div>{data.weather[0]['main']}</div>
+            <div>{data.weather[0]['description']}</div>
           </div>
+          }
         </div>
       </div>
 
