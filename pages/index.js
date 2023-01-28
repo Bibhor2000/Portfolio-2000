@@ -23,17 +23,18 @@ export default function Home() {
         setLat(position.coords.latitude);
         setLong(position.coords.longitude);
       });
-      // console.log(process.env.NEXT_PUBLIC_API_URL)
-      console.log(process.env.NEXT_PUBLIC_API_KEY)
+      // console.log(process.env.NEXT_PUBLIC_API_KEY)
       await fetch(`${process.env.NEXT_PUBLIC_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.NEXT_PUBLIC_API_KEY}`)
       .then(res => res.json())
       .then(result => {
         setData(result)
-        console.log(result);
       });
     }
     fetchData();
   }, [lat,long])
+
+  // console.log(data)
+  // console.log(data.weather)
 
   return (
     <div className={styles.appcontainer}>
