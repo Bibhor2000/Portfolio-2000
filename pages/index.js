@@ -85,8 +85,9 @@ export default function Home() {
           {data?.weather&&<div className={styles.appweather}>
             <div>Current Latitude: {lat}</div>
             <div>Current Longitude: {long}</div>
-            <div>{data.weather[0]['main']}</div>
+            <div>Current Temperature is: {data.main.temp}°C</div>
             <div>{data.weather[0]['description']}</div>
+            <div>Winds are blowing at {data.wind.speed}mph</div>
           </div>
           }
         </div>
