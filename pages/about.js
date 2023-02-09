@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import animateStyles from '../styles/animation.module.css';
 import Image from 'next/image';
 
 
@@ -14,6 +15,20 @@ export default function Home() {
             </div>
             <div className={styles.appAboutImage}>
                 <img src='/portrait.jpg'/>
+            </div>
+            <div class={animateStyles.circles}>
+                <ul >
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     )

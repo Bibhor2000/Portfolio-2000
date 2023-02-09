@@ -93,7 +93,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div class=''>
+      <div class={animateStyles.circles}>
         <ul >
           <li></li>
           <li></li>

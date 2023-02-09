@@ -10,7 +10,7 @@ Bibhor Gurung
 - [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)]()
 - ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
 
-## Technologies used for this app
-https://dev.to/ahmedsarhan/create-your-live-watch-and-date-in-react-js-no-3rd-party-hassle-1oa4
-https://codeconvey.com/css-background-linear-gradient-animation/
-
+## Resources used for this app
+- https://dev.to/ahmedsarhan/create-your-live-watch-and-date-in-react-js-no-3rd-party-hassle-1oa4
+- https://codeconvey.com/css-background-linear-gradient-animation/
+- https://codeconvey.com/animated-website-background-with-html5/

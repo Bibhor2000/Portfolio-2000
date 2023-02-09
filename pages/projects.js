@@ -1,4 +1,5 @@
 import styles from '../styles/Home.module.css';
+import animateStyles from '../styles/animation.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import {React, useState, useEffect} from 'react';
@@ -40,6 +41,20 @@ export default function Projects() {
                 <Link href='https://bibhor2000.github.io/Project-1/'>
                     <button className={styles.cardbuttons}>Visit Live Site</button>
                 </Link>
+            </div>
+            <div class={animateStyles.circles}>
+                <ul >
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
     )
