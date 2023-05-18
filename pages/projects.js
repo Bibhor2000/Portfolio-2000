@@ -42,6 +42,16 @@ export default function Projects() {
                     <button className={styles.cardbuttons}>Visit Live Site</button>
                 </Link>
             </div>
+            <div className={styles.video}>
+                <h3>Project N-EX [In Development]</h3>
+                <video controls height='500' width='250'>
+                    <source src='/screen-20230502-1426263.mp4'></source>
+                </video>
+                <p>A Unity app with the goal of displaying realtime vehicle telemetry with the
+                    additional goal of a humanoid model that can read out the data in a ai-generated voice.
+                </p>
+                <h4>Currently fake data is being used to test the UI</h4>
+            </div>
             <div class={animateStyles.circles}>
                 <ul >
                     <li></li>
