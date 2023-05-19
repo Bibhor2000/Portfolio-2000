@@ -51,6 +51,9 @@ export default function Projects() {
                     additional goal of a humanoid model that can read out the data in a ai-generated voice.
                 </p>
                 <h4>Currently fake data is being used to test the UI</h4>
+                <Link href='https://github.com/Bibhor2000/Project-N-EX'>
+                    <button className={styles.cardbuttons}>Visit Repo</button>
+                </Link>
             </div>
             <div class={animateStyles.circles}>
                 <ul >
